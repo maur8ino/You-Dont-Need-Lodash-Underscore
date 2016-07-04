@@ -8,12 +8,12 @@
 // Requirements
 // ------------------------------------------------------------------------------
 
-const rules = require('../../../lib/rules/all');
-const RuleTester = require('eslint').RuleTester;
+var rules = require('../../../lib/rules/all');
+var RuleTester = require('eslint').RuleTester;
 
 // Only a couple of smoke tests because otherwise it would get very reduntant
 
-const ruleTester = new RuleTester();
+var ruleTester = new RuleTester();
 
 ruleTester.run('_.concat', rules.concat, {
   valid: [
